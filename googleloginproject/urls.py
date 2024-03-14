@@ -16,11 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+<<<<<<< HEAD
 from django.views.generic import TemplateView
 
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="home.html")),
+=======
+
+urlpatterns = [
+>>>>>>> 67f03ddb1f2f16728fa1f276e0369c4153cc8b2b
     path("admin/", admin.site.urls),
     path("accounts/", include("allauth.urls")),
     path("", include("loginapi.urls")),

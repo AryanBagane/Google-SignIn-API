@@ -40,8 +40,13 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+<<<<<<< HEAD
     "django.contrib.sites",
     "loginapi",
+=======
+    "loginapi",
+    "django.contrib.sites",
+>>>>>>> 67f03ddb1f2f16728fa1f276e0369c4153cc8b2b
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
@@ -52,9 +57,15 @@ SOCIALACCOUNT_PROVIDERS = {
     "google": {
         "scope": [
             "profile",
+<<<<<<< HEAD
             "email",
         ],
         "AUTH_PARAMS": {"access_type": "online",}
+=======
+            "email"
+        ],
+        "AUTH_PARAMS": {"access_type": "online"}
+>>>>>>> 67f03ddb1f2f16728fa1f276e0369c4153cc8b2b
     }
 }
 
@@ -144,7 +155,11 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTHENTICATION_BACKENDS = (
     "django.contrib.auth.backends.ModelBackend",
+<<<<<<< HEAD
     "allauth.account.auth_backends.AuthenticationBackend",
+=======
+    "allauth.account.auth_backends.AuthenticationBackend"
+>>>>>>> 67f03ddb1f2f16728fa1f276e0369c4153cc8b2b
 )
 
 LOGIN_REDIRECT_URL = "/"
